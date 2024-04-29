@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <h2 class="text-4xl font-black uppercase my-6 text-center underline underline-offset-4">Plagiarism checker</h2>
+        <div id="main-content" class="space-y-6">
+            <div class="text-center">
+                <button class="px-4 py-2 bg-cyan-600 text-white font-bold" onclick="getFile1()">Add file 1</button>
+                <button class="px-4 py-2 bg-cyan-600 text-white font-bold" onclick="getFile2()">Add file 2</button>
+            </div>
+            <div class="bg-gray text-[#111] border border-blue-600 rounded-md p-6 font-bold">
+                File 1 text :
+                <div>
+                    <textarea placeholder="Type here...." id="output1"
+                        class="text-[16px] p-4 rounded-md text-gray-700 font-medium" name="file1" id="" cols="80"
+                        rows="4"></textarea
+                </div>
+            </div>
+            <div class="bg-gray text-[#111]  border-blue-600 rounded-md font-bold">
+                File 2 text :
+                <div>
+                    <textarea placeholder="Type here...."  id="output2" class="text-[16px] p-4 text-gray-700 rounded-md font-medium" name="file1" id="" cols="80" rows="4"></textarea
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="px-4 py-2 bg-blue-600 text-white font-bold" id="checkBtn">Check Similarity</button>
+
+            </div>
+            <div class="bg-gray flex gap-4 items-center text-[#111] text-xl border-blue-600 rounded-md p-6 font-bold">
+                Result :
+                <p class="text-[16px] text-red-700" id="result"></p>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
